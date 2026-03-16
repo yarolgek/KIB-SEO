@@ -1,0 +1,82 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import { usePageMetadata } from '../hooks/usePageMetadata';
+
+export default function WebsiteOptimierungPage() {
+  const navigate = useNavigate();
+  usePageMetadata({
+    title: 'BEST Website Optimierung Mönchengladbach - KI Brueder | Page Speed, Mobile Optimierung & Conversion Rate near me',
+    description: 'KI Brueder – Website Optimierung in Mönchengladbach. Page Speed, Mobile Optimierung, Conversion Rate & technisches SEO für mehr Kunden.'
+  });
+  return (
+    <div className="min-h-screen bg-gray-50 dark:bg-black text-gray-900 dark:text-white">
+      <Navbar onServicesClick={() => navigate('/')} onBookClick={() => navigate('/booking')} />
+      <main className="max-w-4xl mx-auto px-4 py-32">
+
+        <div className="mb-16">
+          <span className="text-yellow-500 font-semibold text-sm uppercase tracking-widest">Website Optimierung Mönchengladbach</span>
+          <h1 className="text-4xl md:text-5xl font-bold mt-3 mb-6 leading-tight">Website Optimierung Mönchengladbach – Schneller, besser, mehr Kunden</h1>
+          <p className="text-xl text-gray-600 dark:text-gray-400 leading-relaxed">Manchmal braucht es keine neue Website – sondern eine deutlich bessere Version der bestehenden. Mit gezielter Website-Optimierung steigern wir Geschwindigkeit, Benutzerfreundlichkeit und Conversion-Rate Ihrer aktuellen Seite – oft mit überraschend großer Wirkung.</p>
+        </div>
+
+        
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">Website Optimierung Mönchengladbach – Warum es sich lohnt</h2>
+          <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">Eine neue Website klingt verlockend – ist aber häufig gar nicht nötig. Viele Websites in Mönchengladbach verlieren täglich potenzielle Kunden, weil sie zu langsam laden, auf dem Smartphone schlecht aussehen oder Besucher nicht klar zur gewünschten Aktion führen. Diese Probleme lassen sich gezielt beheben, ohne alles neu aufzubauen.</p>
+          <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">Wir starten mit einem gründlichen Audit und identifizieren die Stellschrauben mit dem höchsten Impact. So investieren Sie nur in das, was wirklich einen Unterschied macht.</p>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-6">Website Optimierung Mönchengladbach – Typische Optimierungsbereiche</h2>
+          <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">Ladegeschwindigkeit ist kritisch: Jede Sekunde längere Ladezeit reduziert die Conversion-Rate um bis zu 7%. Wir optimieren Bildgrößen, Caching, Code-Minifizierung und Serverantwortzeiten für spürbar schnellere Seiten.</p>
+          <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">Mobile Optimierung: Über 60% Ihrer Besucher kommen vom Smartphone. Wir stellen sicher, dass Ihre Website auf jedem Gerät perfekt funktioniert und aussieht.</p>
+          <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">Conversion-Rate-Optimierung: Durch bessere Texte, klarere CTAs, optimierte Formulare und überzeugendere Vertrauenssignale verwandeln wir mehr Besucher in Anfragen.</p>
+          <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">SEO-Korrekturen: Fehlende Meta-Tags, doppelter Content, kaputte Links – wir beheben alle technischen SEO-Probleme, die Ihre Rankings bremsen.</p>
+        </section>
+
+
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold mb-8">FAQ: Website Optimierung in Mönchengladbach</h2>
+          <div className="space-y-6">
+            <div className="border border-gray-200 dark:border-gray-800 rounded-xl p-6">
+              <h3 className="font-bold mb-2">Woran erkenne ich, dass meine Website optimiert werden sollte?</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Typische Zeichen: niedrige Conversion-Rate, hohe Absprungrate, schlechte Google PageSpeed-Werte, sinkender organischer Traffic oder viele Besucher aber wenige Anfragen.</p>
+            </div>
+            <div className="border border-gray-200 dark:border-gray-800 rounded-xl p-6">
+              <h3 className="font-bold mb-2">Wie läuft die Optimierung ab, ohne meinen laufenden Betrieb zu stören?</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Wir arbeiten in einer Testumgebung und spielen Änderungen erst nach Freigabe auf die Live-Website ein. Ihr Betrieb läuft während der gesamten Optimierung unterbrechungsfrei weiter.</p>
+            </div>
+            <div className="border border-gray-200 dark:border-gray-800 rounded-xl p-6">
+              <h3 className="font-bold mb-2">Wie messen Sie den Erfolg der Optimierung?</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Durch klare Vorher-Nachher-Vergleiche: Ladezeit, Absprungrate, Verweildauer, Conversion-Rate und organische Rankings – alle gemessen mit professionellen Tools.</p>
+            </div>
+            <div className="border border-gray-200 dark:border-gray-800 rounded-xl p-6">
+              <h3 className="font-bold mb-2">Was kostet eine Website-Optimierung?</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Das hängt vom Umfang ab. Ein technischer Quick-Fix startet bei wenigen hundert Euro. Eine umfassende Optimierung inklusive Content und Design kostet mehr – im kostenlosen Erstgespräch erstellen wir ein konkretes Angebot.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold mb-4">Verwandte Leistungen</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <a href="/website-erstellung" className="flex items-center gap-2 text-yellow-600 dark:text-yellow-400 hover:text-yellow-700 dark:hover:text-yellow-300 font-medium transition-colors">→ Website Erstellung</a>
+            <a href="/landing-page-design" className="flex items-center gap-2 text-yellow-600 dark:text-yellow-400 hover:text-yellow-700 dark:hover:text-yellow-300 font-medium transition-colors">→ Landing Page Design</a>
+            <a href="/seo" className="flex items-center gap-2 text-yellow-600 dark:text-yellow-400 hover:text-yellow-700 dark:hover:text-yellow-300 font-medium transition-colors">→ SEO</a>
+            <a href="/conversion-optimierung" className="flex items-center gap-2 text-yellow-600 dark:text-yellow-400 hover:text-yellow-700 dark:hover:text-yellow-300 font-medium transition-colors">→ Conversion Optimierung</a>
+          </div>
+        </section>
+
+        <section className="bg-gradient-to-r from-yellow-500 to-orange-500 rounded-2xl p-10 text-center text-white">
+          <h2 className="text-3xl font-bold mb-4">Wir holen mehr aus Ihrer Website heraus</h2>
+          <p className="text-white/90 mb-8 text-lg max-w-xl mx-auto">Lassen Sie uns Ihre Website kostenlos analysieren und zeigen, welches Potenzial noch ungenutzt ist.</p>
+          <button onClick={() => navigate('/booking')} className="bg-white text-yellow-600 hover:bg-yellow-50 font-bold px-8 py-4 rounded-lg transition-all text-lg">Kostenloses Gespräch buchen</button>
+        </section>
+
+      </main>
+      <Footer />
+    </div>
+  );
+}
