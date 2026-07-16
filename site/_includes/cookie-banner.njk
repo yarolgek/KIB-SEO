@@ -1,0 +1,25 @@
+<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-50 p-4 bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 shadow-lg hidden">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div class="flex items-start gap-3 flex-1">
+        <div class="p-2 bg-yellow-500/10 rounded-lg flex-shrink-0">
+          <svg class="w-5 h-5 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div class="flex-1">
+          <h3 class="font-semibold text-gray-900 dark:text-white mb-1" data-i18n="cookie.title">Cookie-Einstellungen</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+            <span data-i18n="cookie.description">Wir verwenden Cookies, um Ihre Erfahrung zu verbessern.</span>
+            <a href="/privacy/" class="text-yellow-600 dark:text-yellow-400 hover:underline ml-1" data-i18n="cookie.learnMore">Mehr erfahren</a>
+          </p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 flex-shrink-0">
+        <button type="button" id="cookie-decline" class="px-4 py-2 text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="cookie.decline">Ablehnen</button>
+        <button type="button" id="cookie-accept" class="px-6 py-2 text-sm font-medium bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white rounded-lg transition-all" data-i18n="cookie.accept">Akzeptieren</button>
+        <button type="button" id="cookie-close" class="p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors" aria-label="Schließen">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

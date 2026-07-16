@@ -15,6 +15,8 @@ export const appConfig: PrerenderConfig = {
     '/contact',
     '/ai',
     '/blog',
+    '/blog/do-less',
+    '/blog/beat-any-ad',
     '/newsletter',
     '/imprint',
     '/privacy',

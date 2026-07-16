@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de" class="light">
+<head>
+  {% include "head.njk" %}
+</head>
+<body class="min-h-screen bg-gray-50 dark:bg-black text-gray-900 dark:text-white">
+  {% include "navbar.njk" %}
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  {% include "footer.njk" %}
+  {% include "cookie-banner.njk" %}
+
+  <script src="/js/config.js"></script>
+  <script src="/js/main.js" defer></script>
+  {% if bilingual %}
+  <script src="/js/i18n.js" defer></script>
+  {% endif %}
+  {% if hasForms %}
+  <script type="module" src="/js/forms.js"></script>
+  {% endif %}
+</body>
+</html>

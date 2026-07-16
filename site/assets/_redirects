@@ -1,0 +1,2 @@
+# Static site — no SPA fallback.
+# Netlify serves /path/ → /path/index.html automatically.

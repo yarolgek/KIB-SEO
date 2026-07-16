@@ -1,0 +1,69 @@
+<nav class="fixed w-full z-50 bg-white/80 dark:bg-black/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800" id="main-nav">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="/" class="flex items-center gap-2" aria-label="KI Brueder Startseite">
+        <img src="/KIBrueder.png" alt="KI Brueder Logo" class="h-10 w-auto dark:invert" width="40" height="40" />
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a href="/" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="nav.home">Startseite</a>
+        <a href="/about/" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="nav.about">Über uns</a>
+        <a href="/#services" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors js-scroll-services" data-i18n="nav.services">Dienstleistungen</a>
+        <a href="/regionen/" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">Regionen</a>
+        <a href="/blog/" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors">Blog</a>
+        <a href="/contact/" class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="nav.contact">Kontakt</a>
+      </div>
+
+      <div class="hidden md:flex items-center gap-4">
+        {% if bilingual !== false %}
+        <div class="flex gap-2 language-selector" role="group" aria-label="Language">
+          <button type="button" data-lang="en" class="lang-btn px-2 py-1 text-sm rounded transition-colors text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">EN</button>
+          <button type="button" data-lang="de" class="lang-btn px-2 py-1 text-sm rounded transition-colors bg-orange-600 text-white">DE</button>
+        </div>
+        {% endif %}
+        <button type="button" id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors" aria-label="Theme umschalten">
+          <svg class="w-5 h-5 theme-icon-sun hidden dark:block text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="w-5 h-5 theme-icon-moon block dark:hidden text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="/contact/" class="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white px-6 py-2 rounded-lg font-semibold transition-colors" data-i18n="nav.getStarted">Loslegen</a>
+      </div>
+
+      <div class="md:hidden flex items-center gap-2">
+        <button type="button" id="theme-toggle-mobile" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors" aria-label="Theme umschalten">
+          <svg class="w-5 h-5 theme-icon-sun hidden dark:block text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="w-5 h-5 theme-icon-moon block dark:hidden text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button type="button" id="mobile-menu-btn" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors" aria-label="Menü öffnen" aria-expanded="false">
+          <svg id="menu-icon-open" class="w-6 h-6 text-gray-900 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="menu-icon-close" class="w-6 h-6 text-gray-900 dark:text-white hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="mobile-menu" class="fixed inset-0 z-40 md:hidden hidden">
+  <div class="fixed inset-0 bg-black/50" id="mobile-menu-backdrop"></div>
+  <div class="fixed top-16 left-0 right-0 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 shadow-lg">
+    <div class="px-4 py-6 space-y-4">
+      <a href="/" class="block py-2 text-lg font-medium text-gray-900 dark:text-white hover:text-yellow-500" data-i18n="nav.home">Startseite</a>
+      <a href="/about/" class="block py-2 text-lg font-medium text-gray-900 dark:text-white hover:text-yellow-500" data-i18n="nav.about">Über uns</a>
+      <a href="/#services" class="block py-2 text-lg font-medium text-gray-900 dark:text-white hover:text-yellow-500 js-scroll-services" data-i18n="nav.services">Dienstleistungen</a>
+      <a href="/regionen/" class="block py-2 text-lg font-medium text-gray-900 dark:text-white hover:text-yellow-500">Regionen</a>
+      <a href="/blog/" class="block py-2 text-lg font-medium text-gray-900 dark:text-white hover:text-yellow-500">Blog</a>
+      <a href="/contact/" class="block py-2 text-lg font-medium text-gray-900 dark:text-white hover:text-yellow-500" data-i18n="nav.contact">Kontakt</a>
+      <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
+        {% if bilingual !== false %}
+        <div class="flex items-center justify-between mb-4">
+          <span class="text-sm font-medium text-gray-700 dark:text-gray-300">Language</span>
+          <div class="flex gap-2 language-selector">
+            <button type="button" data-lang="en" class="lang-btn px-2 py-1 text-sm rounded transition-colors text-gray-600 dark:text-gray-400">EN</button>
+            <button type="button" data-lang="de" class="lang-btn px-2 py-1 text-sm rounded transition-colors bg-orange-600 text-white">DE</button>
+          </div>
+        </div>
+        {% endif %}
+        <a href="/contact/" class="block w-full text-center bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-6 py-3 rounded-lg font-semibold" data-i18n="nav.getStarted">Loslegen</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+{
+  "name": "KI Brueder",
+  "url": "https://kibrueder.de",
+  "email": "info@kibrueder.de",
+  "phone": "+49 178 1698587",
+  "gaId": "G-FEPB2S6WPB",
+  "contactWebhook": "https://hook.eu2.make.com/g2rleywbhes1xomav35o21zibyep3n6j",
+  "newsletterWebhook": "https://hook.eu2.make.com/ksfuh0scnsz9wdo9idv88j8kbpwfds73",
+  "address": {
+    "street": "Schroffstraße 29",
+    "city": "Mönchengladbach",
+    "postalCode": "41199",
+    "country": "DE"
+  }
+}
