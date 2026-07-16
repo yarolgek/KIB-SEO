@@ -1,0 +1,67 @@
+# KI Brueder
+> Online-Marketing-Agentur aus Mönchengladbach (Niederrhein): Local SEO, Google Ads, Meta Ads, Website-Erstellung und KI-Automatisierung für lokale Unternehmen in Deutschland.
+
+KI Brueder (Ghajar Amirnezami, Nima & Saman GbR) hilft Unternehmen, bei Google gefunden zu werden und mehr qualifizierte Kundenanfragen zu bekommen. Schwerpunkt: Local SEO, Google Maps / Google Business Profile, bezahlte Werbung und KI-gestützte Lead-Generierung.
+
+- Website: https://kibrueder.de/
+- Kontakt: https://kibrueder.de/contact/
+- E-Mail: info@kibrueder.de
+- Telefon: +49 178 1698587
+- Standort: Schroffstraße 29, 41199 Mönchengladbach, Germany
+- Sprache der Seiteninhalte: Deutsch (UI auf Kernseiten auch Englisch umschaltbar)
+- Sitemap: https://kibrueder.de/sitemap.xml
+
+## Kernseiten
+- [Startseite](https://kibrueder.de/): Überblick über Leistungen und Angebot
+- [Über uns](https://kibrueder.de/about/): Team und Mission
+- [Kontakt](https://kibrueder.de/contact/): Kostenloses Gespräch (30 Min.)
+- [Blog](https://kibrueder.de/blog/): Einblicke zu Local SEO, Marketing und Wachstum
+
+## Leistungen
+- [Local SEO](https://kibrueder.de/local-seo/): Lokale Sichtbarkeit bei Google und Google Maps
+- [SEO](https://kibrueder.de/seo/): Organische Suchmaschinenoptimierung
+- [SEO Services](https://kibrueder.de/seo-services/): SEO-Leistungen im Überblick
+- [SEO Analyse](https://kibrueder.de/seo-analyse/): Website- und Ranking-Analyse
+- [KI Lösungen](https://kibrueder.de/ai/): Chatbots, Automatisierung, KI-Telefonagent
+- [Google Ads](https://kibrueder.de/google-ads/): Suchanzeigen und Kampagnenmanagement
+- [Meta Ads](https://kibrueder.de/meta-ads/): Facebook- und Instagram-Werbung
+- [Facebook Ads](https://kibrueder.de/facebook-ads/): Facebook-Kampagnen
+- [Online Marketing / Ads](https://kibrueder.de/ads/): Bezahlte Werbung gesamt
+- [Digitale Werbung](https://kibrueder.de/digitale-werbung/): Digitale Werbekanäle
+- [Search Engine Marketing](https://kibrueder.de/search-engine-marketing/): SEM
+- [Website Erstellung](https://kibrueder.de/website-erstellung/): Neue Websites für lokale Unternehmen
+- [Website Optimierung](https://kibrueder.de/website-optimierung/): Bestehende Websites verbessern
+- [Landing Page Design](https://kibrueder.de/landing-page-design/): Conversion-fokussierte Landingpages
+- [Google Maps Optimierung](https://kibrueder.de/google-maps-optimierung/): Maps / Local Pack
+- [Google Business Profile](https://kibrueder.de/google-business-profile/): Unternehmensprofil optimieren
+- [Lead Generierung](https://kibrueder.de/lead-generierung/): Qualifizierte Termine / Leads
+- [Conversion Optimierung](https://kibrueder.de/conversion-optimierung/): Mehr Anfragen aus bestehendem Traffic
+- [Web Analyse Setup](https://kibrueder.de/web-analyse-setup/): Tracking und Analytics
+- [Email Marketing](https://kibrueder.de/email-marketing/): E-Mail-Kampagnen
+
+## Regionen
+- [Alle Regionen](https://kibrueder.de/regionen/): Übersicht der betreuten Orte am Niederrhein
+- [Rheydt](https://kibrueder.de/regionen/rheydt/)
+- [Wickrath](https://kibrueder.de/regionen/wickrath/)
+- [Odenkirchen](https://kibrueder.de/regionen/odenkirchen/)
+- [Korschenbroich](https://kibrueder.de/regionen/korschenbroich/)
+- [Grevenbroich](https://kibrueder.de/regionen/grevenbroich/)
+- [Erkelenz](https://kibrueder.de/regionen/erkelenz/)
+- [Rheindahlen](https://kibrueder.de/regionen/rheindahlen/)
+
+## Rechtliches
+- [Impressum](https://kibrueder.de/imprint/)
+- [Datenschutz](https://kibrueder.de/privacy/)
+
+## Optional
+- [Newsletter](https://kibrueder.de/newsletter/): Tipps zu Local SEO und Wachstum
+- [Blog: Mach weniger](https://kibrueder.de/blog/do-less/)
+- [Blog: Schlag jede Werbung](https://kibrueder.de/blog/beat-any-ad/)
+- [Mönchengladbach Süd](https://kibrueder.de/regionen/moenchengladbach-sued/)
+- [Mönchengladbach Nord](https://kibrueder.de/regionen/moenchengladbach-nord/)
+- [Mönchengladbach Ost](https://kibrueder.de/regionen/moenchengladbach-ost/)
+- [Giesenkirchen](https://kibrueder.de/regionen/giesenkirchen/)
+- [Hardterbroich](https://kibrueder.de/regionen/hardterbroich/)
+- [Holt](https://kibrueder.de/regionen/holt/)
+- [Geistenbeck](https://kibrueder.de/regionen/geistenbeck/)
+- [Eicken](https://kibrueder.de/regionen/eicken/)

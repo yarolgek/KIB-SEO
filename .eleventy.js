@@ -5,6 +5,12 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("json", (value) => JSON.stringify(value, null, 2));
 
+  eleventyConfig.addFilter("dateToIsoDate", (value) => {
+    const d = value instanceof Date ? value : new Date(value || Date.now());
+    if (Number.isNaN(d.getTime())) return new Date().toISOString().slice(0, 10);
+    return d.toISOString().slice(0, 10);
+  });
+
   eleventyConfig.addPassthroughCopy({ "site/assets": "." });
   eleventyConfig.addPassthroughCopy({ "site/js": "js" });
   eleventyConfig.addPassthroughCopy({ "public/zohoverify": "zohoverify" });

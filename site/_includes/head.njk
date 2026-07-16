@@ -49,4 +49,35 @@
 
 {% if schema %}
 <script type="application/ld+json">{{ schema | json | safe }}</script>
+{% else %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": {{ title | dump | safe }},
+  "description": {{ description | dump | safe }},
+  "url": "{{ site.url }}{{ page.url | replace('index.html', '') }}",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "KI Brueder",
+    "url": "{{ site.url }}/"
+  },
+  "inLanguage": "de-DE",
+  "publisher": {
+    "@type": "Organization",
+    "name": "KI Brueder",
+    "url": "{{ site.url }}/",
+    "logo": "{{ site.url }}/KIBrueder.png",
+    "email": "{{ site.email }}",
+    "telephone": "{{ site.phone }}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ site.address.street }}",
+      "addressLocality": "{{ site.address.city }}",
+      "postalCode": "{{ site.address.postalCode }}",
+      "addressCountry": "{{ site.address.country }}"
+    }
+  }
+}
+</script>
 {% endif %}

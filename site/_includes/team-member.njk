@@ -1,0 +1,14 @@
+{# Required: name, roleKey, imageSrc, imageAlt #}
+<article class="bg-white dark:bg-gray-900 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 text-center">
+  <img
+    src="{{ imageSrc }}"
+    alt="{{ imageAlt }}"
+    width="192"
+    height="192"
+    loading="lazy"
+    decoding="async"
+    class="w-48 h-48 object-cover rounded-full mx-auto shadow-lg mb-6"
+  />
+  <h3 class="text-2xl font-bold mb-2">{{ name }}</h3>
+  <p class="text-gray-600 dark:text-gray-400" data-i18n="{{ roleKey }}">{{ role }}</p>
+</article>

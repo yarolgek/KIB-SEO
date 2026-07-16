@@ -1,0 +1,23 @@
+{# Required: href, title, features, icon, titleKey, featureKeys #}
+<a href="{{ href }}" class="group block p-8 rounded-2xl bg-white dark:bg-gradient-to-b dark:from-gray-900 dark:to-black border border-gray-200 dark:border-gray-800 hover:border-yellow-500/50 dark:hover:border-yellow-500/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(234,179,8,0.2)] dark:hover:shadow-[0_0_30px_rgba(234,179,8,0.1)] relative overflow-hidden" data-animate>
+  <div class="absolute inset-0 bg-gradient-to-br from-yellow-500/[0.05] to-orange-500/[0.05] dark:from-yellow-500/[0.02] dark:to-orange-500/[0.02] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+  <div class="relative">
+    <div class="text-yellow-500 mb-6 transform group-hover:scale-110 transition-transform duration-300">
+      {% include icon %}
+    </div>
+    <h3 class="text-gray-900 dark:text-white text-xl font-semibold mb-4 group-hover:text-yellow-500 dark:group-hover:text-yellow-400 transition-colors duration-300" data-i18n="{{ titleKey }}">{{ title }}</h3>
+    <ul class="space-y-3 mb-6">
+      {% for feature in features %}
+      {% set key = featureKeys[loop.index0] %}
+      <li class="flex items-center gap-2 text-gray-600 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-gray-200 transition-colors duration-300">
+        <span class="w-1 h-1 bg-yellow-500 rounded-full group-hover:w-2 group-hover:h-2 transition-all duration-300 shrink-0"></span>
+        <span data-i18n="{{ key }}">{{ feature }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    <span class="text-yellow-600 dark:text-yellow-400 group-hover:text-yellow-700 dark:group-hover:text-yellow-300 inline-flex items-center gap-2 transition-colors group-hover:gap-3" data-i18n="services.learnMore">
+      Mehr erfahren
+      {% include "icons/arrow-right.njk" %}
+    </span>
+  </div>
+</a>

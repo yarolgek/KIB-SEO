@@ -1,8 +1,7 @@
+# Kept for legacy/reference only — production robots.txt is site/assets/robots.txt
+# (copied to /robots.txt by Eleventy).
+
 User-agent: *
 Allow: /
 
-# Sitemap
 Sitemap: https://kibrueder.de/sitemap.xml
-
-# Crawl-delay (optional - helps prevent server overload)
-Crawl-delay: 1

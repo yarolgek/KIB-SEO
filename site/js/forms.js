@@ -49,7 +49,7 @@ if (contactForm) {
     const original = btn?.textContent;
     if (btn) {
       btn.disabled = true;
-      btn.textContent = 'Wird gesendet...';
+      btn.textContent = (typeof window.t === 'function' && window.t('contact.form.submitting')) || 'Wird gesendet...';
     }
 
     try {
@@ -99,7 +99,7 @@ if (newsletterForm) {
     const original = btn?.textContent;
     if (btn) {
       btn.disabled = true;
-      btn.textContent = 'Wird gesendet...';
+      btn.textContent = (typeof window.t === 'function' && window.t('contact.form.submitting')) || 'Wird gesendet...';
     }
 
     try {

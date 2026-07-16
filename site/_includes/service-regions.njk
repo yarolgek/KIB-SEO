@@ -1,0 +1,33 @@
+<section class="mb-16">
+  <h2 class="text-3xl font-bold mb-4">Unternehmen aus der Region die wir betreuen</h2>
+  <p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+    Wir arbeiten vollständig online und betreuen Kunden deutschlandweit. Besonders viele unserer Kunden kommen aus Mönchengladbach und der direkten Umgebung – hier kennen wir den lokalen Markt, die Wettbewerbssituation und die Suchgewohnheiten aus dem Effeff.
+  </p>
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mb-4">
+    {% for area in [
+      { "label": "Mönchengladbach", "href": "/" },
+      { "label": "Rheydt", "href": "/regionen/rheydt/" },
+      { "label": "Wickrath", "href": "/regionen/wickrath/" },
+      { "label": "Odenkirchen", "href": "/regionen/odenkirchen/" },
+      { "label": "Giesenkirchen", "href": "/regionen/giesenkirchen/" },
+      { "label": "Hardterbroich", "href": "/regionen/hardterbroich/" },
+      { "label": "Holt", "href": "/regionen/holt/" },
+      { "label": "Geistenbeck", "href": "/regionen/geistenbeck/" },
+      { "label": "Eicken", "href": "/regionen/eicken/" },
+      { "label": "Rheindahlen", "href": "/regionen/rheindahlen/" },
+      { "label": "Korschenbroich", "href": "/regionen/korschenbroich/" },
+      { "label": "Grevenbroich", "href": "/regionen/grevenbroich/" },
+      { "label": "Erkelenz", "href": "/regionen/erkelenz/" },
+      { "label": "MG Süd", "href": "/regionen/moenchengladbach-sued/" },
+      { "label": "MG Nord", "href": "/regionen/moenchengladbach-nord/" }
+    ] %}
+    <a href="{{ area.href }}" class="text-center border border-gray-200 dark:border-gray-800 hover:border-yellow-500/50 rounded-lg px-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-yellow-600 dark:hover:text-yellow-400 transition-all">
+      {{ area.label }}
+    </a>
+    {% endfor %}
+  </div>
+  <p class="text-gray-500 text-sm">
+    Nicht dabei? Kein Problem –
+    <a href="/contact/" class="text-yellow-600 dark:text-yellow-400 hover:underline">wir betreuen Unternehmen in ganz Deutschland.</a>
+  </p>
+</section>
