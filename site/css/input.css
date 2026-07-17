@@ -19,6 +19,76 @@
   }
 }
 
+/* Shared card hover — same feel as homepage service cards */
+@layer components {
+  .hover-card {
+    @apply relative overflow-hidden transition-all duration-300;
+  }
+
+  .hover-card::after {
+    content: "";
+    @apply absolute inset-0 opacity-0 transition-opacity duration-300 pointer-events-none;
+    background: linear-gradient(
+      to bottom right,
+      rgba(234, 179, 8, 0.05),
+      rgba(249, 115, 22, 0.05)
+    );
+  }
+
+  .dark .hover-card::after {
+    background: linear-gradient(
+      to bottom right,
+      rgba(234, 179, 8, 0.02),
+      rgba(249, 115, 22, 0.02)
+    );
+  }
+
+  .hover-card:hover {
+    @apply border-yellow-500/50;
+    box-shadow: 0 0 30px rgba(234, 179, 8, 0.2);
+  }
+
+  .dark .hover-card:hover {
+    box-shadow: 0 0 30px rgba(234, 179, 8, 0.1);
+  }
+
+  .hover-card:hover::after {
+    opacity: 1;
+  }
+
+  .hover-card > * {
+    @apply relative z-[1];
+  }
+
+  .hover-card :is(h2, h3) {
+    @apply transition-colors duration-300;
+  }
+
+  .hover-card:hover :is(h2, h3) {
+    @apply text-yellow-500;
+  }
+
+  .dark .hover-card:hover :is(h2, h3) {
+    @apply text-yellow-400;
+  }
+
+  .hover-card .hover-dot {
+    @apply transition-all duration-300;
+  }
+
+  .hover-card:hover .hover-dot {
+    @apply w-2 h-2;
+  }
+
+  .hover-card img {
+    @apply transition-transform duration-300;
+  }
+
+  .hover-card:hover img {
+    @apply scale-105;
+  }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
