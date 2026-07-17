@@ -10,6 +10,15 @@ function hideEl(id) {
   document.getElementById(id)?.classList.add('hidden');
 }
 
+function scrollToFormFeedback(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const top = el.getBoundingClientRect().top + window.pageYOffset - 100;
+  window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  el.setAttribute('tabindex', '-1');
+  el.focus({ preventScroll: true });
+}
+
 // —— Contact form ——
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
@@ -67,9 +76,11 @@ if (contactForm) {
       contactForm.reset();
       showEl('contact-success');
       hideEl('contact-form-fields');
+      scrollToFormFeedback('contact-success');
     } catch (err) {
       console.error(err);
       showEl('contact-error');
+      scrollToFormFeedback('contact-error');
     } finally {
       if (btn) {
         btn.disabled = false;
