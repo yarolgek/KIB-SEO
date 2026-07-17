@@ -1,6 +1,6 @@
 window.SITE_CONFIG = {
   supabaseUrl: '',
   supabaseAnonKey: '',
-  contactWebhook: 'https://hook.eu2.make.com/g2rleywbhes1xomav35o21zibyep3n6j',
+  // Contact form uses Netlify Forms (see site/contact + forms.js)
   newsletterWebhook: 'https://hook.eu2.make.com/ksfuh0scnsz9wdo9idv88j8kbpwfds73',
 };

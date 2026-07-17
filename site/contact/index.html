@@ -29,7 +29,11 @@ permalink: /contact/
         <p class="text-red-700 dark:text-red-300" data-i18n="contact.error.text">Das Formular konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder schreiben Sie an info@kibrueder.de.</p>
       </div>
 
-      <form id="contact-form" class="space-y-6" novalidate>
+      <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="space-y-6" novalidate>
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden absolute -left-[9999px]" aria-hidden="true">
+          <label>Don’t fill this out: <input type="text" name="bot-field" tabindex="-1" autocomplete="off" /></label>
+        </p>
         <div id="contact-form-fields" class="space-y-6">
           <div class="grid md:grid-cols-2 gap-6">
             <div>

@@ -53,14 +53,15 @@ if (contactForm) {
     }
 
     try {
-      const res = await fetch(config.contactWebhook, {
+      // Netlify Forms (reliable email notifications via Netlify dashboard)
+      const params = new URLSearchParams();
+      params.set('form-name', 'contact');
+      Object.entries(data).forEach(([key, value]) => params.set(key, value));
+
+      const res = await fetch('/contact/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...data,
-          timestamp: new Date().toISOString(),
-          source: 'contact_form',
-        }),
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: params.toString(),
       });
       if (!res.ok) throw new Error(`Status ${res.status}`);
       contactForm.reset();

@@ -52,7 +52,7 @@ git push origin main
 
 ## Forms
 
-- **Contact** → Make.com webhook (hardcoded in `site/js/config.js`, overridden at build via `scripts/inject-config.js`)
+- **Contact** → Netlify Forms (`name="contact"` on `/contact/`). Enable email alerts under **Netlify → Forms → Form notifications**.
 - **Newsletter** → Supabase `newsletter_subscriptions` + Make.com webhook (needs env vars above)
 
 ## Language
