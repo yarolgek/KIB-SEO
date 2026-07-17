@@ -1,29 +1,61 @@
 ---
 layout: base.njk
 title: "Datenschutz | KI Brueder"
-description: "Datenschutzrichtlinie von KI Brueder."
+description: "Datenschutz und Cookie-Hinweise von KI Brueder – inkl. Google Analytics nach Einwilligung und Formularverarbeitung."
 bilingual: true
 hasForms: false
 permalink: /privacy/
 ---
 <div class="pt-20">
   <div class="max-w-3xl mx-auto px-4 md:px-8 py-12">
-    <h1 class="text-4xl font-bold mb-8" data-i18n="privacy.title">DATENERFASSUNG & COOKIE-RICHTLINIE</h1>
+    <h1 class="text-4xl font-bold mb-8" data-i18n="privacy.title">Datenschutz &amp; Cookies</h1>
 
-    <div class="prose dark:prose-invert">
-      <p class="text-lg mb-8" data-i18n="privacy.intro">Wir schätzen Ihre Privatsphäre.</p>
+    <div class="prose dark:prose-invert max-w-none">
+      <p class="text-lg mb-8 text-gray-600 dark:text-gray-400" data-i18n="privacy.intro">
+        Wir schätzen Ihre Privatsphäre und erklären hier transparent, welche Daten wir verarbeiten.
+      </p>
 
-      <h2 class="text-2xl font-semibold mb-4" data-i18n="privacy.collection.title">Datenerfassung</h2>
-      <p class="mb-6" data-i18n="privacy.collection.noCookies">Für grundlegende Funktionen (z. B. Sprach- oder Theme-Einstellung) kann die Website lokale Speicherung im Browser nutzen. Optionale Analyse-Cookies werden nur geladen, wenn Sie über den Cookie-Banner zustimmen.</p>
-      <p class="mb-6" data-i18n="privacy.collection.analytics">Bei Zustimmung nutzen wir Google Analytics, um die Nutzung der Website zu verstehen (z. B. Seitenaufrufe). Die Datenverarbeitung erfolgt dabei durch Google. Sie können Analytics ablehnen, indem Sie Cookies ablehnen bzw. die Website-Daten im Browser löschen.</p>
-      <p class="mb-6" data-i18n="privacy.collection.personalInfo">Wir erfassen nur persönliche Informationen, die Sie freiwillig zur Verfügung stellen – zum Beispiel, wenn Sie unser Kontaktformular ausfüllen oder unseren Newsletter abonnieren. Diese Informationen (wie Ihr Name oder Ihre E-Mail-Adresse) werden sicher gespeichert und ausschließlich verwendet, um auf Ihre Anfrage zu antworten oder Ihnen Newsletter-Updates zu senden, wenn Sie sich dafür angemeldet haben.</p>
-      <p class="mb-6" data-i18n="privacy.collection.noSharing">Wir verkaufen Ihre persönlichen Daten nicht. Formularanfragen werden an uns zugestellt (z. B. über den Formular-Dienst unseres Hosters / per E-Mail). Analytics-Daten können bei Zustimmung durch Google verarbeitet werden.</p>
+      <h2 class="text-2xl font-semibold mb-4" data-i18n="privacy.controller.title">Verantwortliche Stelle</h2>
+      <p class="mb-6 text-gray-600 dark:text-gray-400">
+        <span data-i18n="privacy.controller.text">Ghajar Amirnezami, Nima &amp; Saman GbR, Schroffstraße 29, 41199 Mönchengladbach, E-Mail: info@kibrueder.de. Weitere Angaben finden Sie im</span>
+        <a href="/imprint/" class="text-yellow-700 dark:text-yellow-300 underline underline-offset-2" data-i18n="footer.imprint">Impressum</a>.
+      </p>
 
-      <h2 class="text-2xl font-semibold mb-4" data-i18n="privacy.thirdParty.title">Inhalte von Drittanbietern</h2>
-      <p class="mb-6" data-i18n="privacy.thirdParty.content">Google Analytics (nur nach Zustimmung) und die Formularzustellung über unseren Hoster können Daten als Auftragsverarbeiter verarbeiten. Eingebettete Drittanbieter-Inhalte können – falls später hinzugefügt – eigene Cookies verwenden.</p>
+      <h2 class="text-2xl font-semibold mb-4" data-i18n="privacy.collection.title">Welche Daten wir verarbeiten</h2>
+      <p class="mb-4 text-gray-600 dark:text-gray-400" data-i18n="privacy.collection.noCookies">
+        Für grundlegende Funktionen (Sprache, Theme, Cookie-Entscheidung) speichern wir Einstellungen lokal in Ihrem Browser (Local Storage) – das sind keine Tracking-Cookies von Drittanbietern.
+      </p>
+      <p class="mb-4 text-gray-600 dark:text-gray-400" data-i18n="privacy.collection.analytics">
+        <strong>Google Analytics (optional):</strong> Nur wenn Sie im Cookie-Banner auf „Akzeptieren“ klicken, laden wir Google Analytics (Mess-ID G-FEPB2S6WPB). Damit erfassen wir z.&nbsp;B. Seitenaufrufe und grobe Nutzungsdaten. Die Verarbeitung erfolgt durch Google Ireland Ltd. / Google LLC. Ohne Zustimmung wird Analytics nicht geladen.
+      </p>
+      <p class="mb-4 text-gray-600 dark:text-gray-400" data-i18n="privacy.collection.personalInfo">
+        <strong>Kontakt- und Newsletter-Formulare:</strong> Wenn Sie ein Formular absenden, verarbeiten wir die von Ihnen eingegebenen Angaben (z.&nbsp;B. Name, E-Mail, Telefon, Nachricht), um Ihre Anfrage zu beantworten bzw. den Newsletter zuzustellen.
+      </p>
+      <p class="mb-6 text-gray-600 dark:text-gray-400" data-i18n="privacy.collection.noSharing">
+        Wir verkaufen Ihre Daten nicht. Formularanfragen werden über unseren Hoster Netlify an uns zugestellt (E-Mail-Benachrichtigung). Newsletter-Daten können in Supabase gespeichert werden, sofern konfiguriert.
+      </p>
+
+      <h2 class="text-2xl font-semibold mb-4" data-i18n="privacy.cookies.title">Cookies &amp; Einwilligung</h2>
+      <ul class="mb-6 space-y-3 text-gray-600 dark:text-gray-400 list-disc pl-5">
+        <li data-i18n="privacy.cookies.essential">Notwendig / funktional: Local Storage für Theme, Sprache und Ihre Cookie-Entscheidung.</li>
+        <li data-i18n="privacy.cookies.analytics">Analyse: Google Analytics nur nach ausdrücklicher Zustimmung. Ablehnen ändert nichts an der Nutzung der Website.</li>
+        <li data-i18n="privacy.cookies.revoke">Widerruf: Löschen Sie die Website-Daten in Ihrem Browser bzw. die Local-Storage-Einträge – der Banner erscheint erneut und Sie können neu entscheiden.</li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold mb-4" data-i18n="privacy.thirdParty.title">Auftragsverarbeiter / Dritte</h2>
+      <p class="mb-6 text-gray-600 dark:text-gray-400" data-i18n="privacy.thirdParty.content">
+        Je nach Nutzung: Netlify (Hosting &amp; Formulare), Google (Analytics nach Einwilligung), ggf. Supabase (Newsletter). Eingebettete Inhalte Dritter (z.&nbsp;B. Blog-Bilder von Unsplash) werden von deren Servern geladen.
+      </p>
+
+      <h2 class="text-2xl font-semibold mb-4" data-i18n="privacy.rights.title">Ihre Rechte</h2>
+      <p class="mb-6 text-gray-600 dark:text-gray-400" data-i18n="privacy.rights.text">
+        Sie haben u.&nbsp;a. Rechte auf Auskunft, Berichtigung, Löschung und Widerspruch. Schreiben Sie uns dazu an info@kibrueder.de. Außerdem können Sie sich bei einer Datenschutzaufsichtsbehörde beschweren.
+      </p>
 
       <div class="bg-yellow-500/10 rounded-lg p-6 mt-8">
-        <p class="text-sm text-gray-600 dark:text-gray-400" data-i18n="privacy.disclaimer">Diese Mitteilung dient nur der allgemeinen Information und stellt keine Rechtsberatung dar. Wenn Sie Fragen zur Datenschutz-Compliance haben, empfehlen wir Ihnen, einen Rechtsbeistand zu konsultieren.</p>
+        <p class="text-sm text-gray-600 dark:text-gray-400" data-i18n="privacy.disclaimer">
+          Diese Mitteilung dient der allgemeinen Information und stellt keine Rechtsberatung dar. Bei rechtlichen Fragen empfehlen wir einen Fachanwalt für Datenschutz.
+        </p>
       </div>
     </div>
   </div>

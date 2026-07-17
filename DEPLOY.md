@@ -12,14 +12,10 @@ Static HTML site built with Eleventy + Tailwind. Source lives in `site/`. Produc
    - **Build command:** `npm run build`
    - **Publish directory:** `_site`
    - **Node version:** 20
-4. **Site configuration → Environment variables** — add:
+4. **Site configuration → Environment variables** — add if you use the newsletter:
    - `SUPABASE_URL` — your Supabase project URL
    - `SUPABASE_ANON_KEY` — public anon key (RLS-protected)
-5. If this is a **new** Netlify site, move the custom domain:
-   - Old site → Domain management → Remove `kibrueder.de`
-   - New site → Domain management → Add `kibrueder.de` (DNS should already point to Netlify)
-6. Trigger a deploy (push to `main` or “Deploy site”).
-7. Disconnect the old bolt.new deploy source if it still exists.
+5. Trigger a deploy (push to `main` or “Deploy site”).
 
 ## Daily workflow (Cursor → Live)
 
@@ -48,18 +44,18 @@ git push origin main
 | `npm run dev` | Local preview with live reload |
 | `npm run build` | Production build → `_site/` |
 | `npm run preview` | Serve `_site/` locally |
-| `npm run export:react` | One-time re-export from legacy React (optional) |
 
 ## Forms
 
 - **Contact** → Netlify Forms (`name="contact"` on `/contact/`). Enable email alerts under **Netlify → Forms → Form notifications**.
-- **Newsletter** → Supabase `newsletter_subscriptions` + Make.com webhook (needs env vars above)
+- **Newsletter** → Supabase `newsletter_subscriptions` + optional Make.com webhook (needs env vars above)
 
 ## Language
 
 - German is the default in all HTML (SEO).
 - Core pages load `js/i18n.js` for an EN/DE toggle (German stays in the HTML source).
 
-## Legacy React
+## Privacy / Analytics
 
-The original React/Vite app remains under `src/` for reference. Production no longer uses it. After you are happy with the static site, you can delete `src/`, Vite configs, and React dependencies.
+- Google Analytics loads only after cookie accept (`site/js/main.js`).
+- Privacy copy: `/privacy/`

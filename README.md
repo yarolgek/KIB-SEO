@@ -22,7 +22,3 @@ npm run build        # production → _site/
 ## Deploy
 
 See **[DEPLOY.md](DEPLOY.md)** for GitHub → Netlify setup and the day-to-day Cursor workflow.
-
-## Legacy
-
-The original React/Vite app under `src/` was used to bootstrap content. Production builds no longer use React.
