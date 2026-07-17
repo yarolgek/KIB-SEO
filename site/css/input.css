@@ -40,26 +40,20 @@
 .animate-delay-400 { animation-delay: 400ms; }
 .animate-delay-500 { animation-delay: 500ms; }
 
-/* Hero flowing paths (ported from Framer BackgroundPaths) */
-@keyframes heroPathFlow {
-  0% {
-    stroke-dashoffset: 0;
-    opacity: 0.35;
-  }
-  50% {
-    opacity: 0.75;
-  }
-  100% {
-    stroke-dashoffset: calc(var(--path-len, 1000px) * -1);
-    opacity: 0.35;
-  }
+/* Hero motion — GPU-friendly transforms only (no stroke-dashoffset) */
+@keyframes heroLinesDriftA {
+  0%, 100% { transform: translate3d(-1.5%, 1%, 0); }
+  50% { transform: translate3d(1.5%, -1.5%, 0); }
 }
 
-.hero-path {
-  animation-name: heroPathFlow;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  will-change: stroke-dashoffset, opacity;
+@keyframes heroLinesDriftB {
+  0%, 100% { transform: translate3d(1.5%, -1%, 0); }
+  50% { transform: translate3d(-2%, 1.5%, 0); }
+}
+
+@keyframes heroGlowPulse {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.06); }
 }
 
 @keyframes heroFadeIn {
@@ -73,6 +67,28 @@
   }
 }
 
+.hero-lines-layer {
+  will-change: transform;
+}
+
+.hero-lines-a {
+  animation: heroLinesDriftA 22s ease-in-out infinite;
+}
+
+.hero-lines-b {
+  animation: heroLinesDriftB 28s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+.hero-glow {
+  animation: heroGlowPulse 14s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+.hero-glow-delay {
+  animation-delay: -7s;
+}
+
 .hero-fade {
   opacity: 0;
   animation: heroFadeIn 0.7s ease-out forwards;
@@ -84,9 +100,10 @@
 .hero-fade-delay-4 { animation-delay: 0.6s; }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-path {
+  .hero-lines-a,
+  .hero-lines-b,
+  .hero-glow {
     animation: none !important;
-    opacity: 0.2;
   }
 
   .hero-fade {
