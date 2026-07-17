@@ -61,15 +61,39 @@
     el.addEventListener('click', scrollToServices);
   });
 
+  // Google Analytics — only after cookie accept
+  function loadAnalytics() {
+    const gaId = window.SITE_GA_ID;
+    if (!gaId || window.__gaLoaded) return;
+    window.__gaLoaded = true;
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function gtag() {
+      window.dataLayer.push(arguments);
+    };
+    window.gtag('js', new Date());
+    window.gtag('config', gaId);
+
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(gaId)}`;
+    document.head.appendChild(script);
+  }
+
   // Cookie banner
   const cookieBanner = document.getElementById('cookie-banner');
-  if (cookieBanner && !localStorage.getItem('cookieConsent')) {
+  const cookieConsent = localStorage.getItem('cookieConsent');
+
+  if (cookieConsent === 'accepted') {
+    loadAnalytics();
+  } else if (cookieBanner && !cookieConsent) {
     setTimeout(() => cookieBanner.classList.remove('hidden'), 1000);
   }
 
   function hideCookie(value) {
     localStorage.setItem('cookieConsent', value);
     cookieBanner?.classList.add('hidden');
+    if (value === 'accepted') loadAnalytics();
   }
 
   document.getElementById('cookie-accept')?.addEventListener('click', () => hideCookie('accepted'));
