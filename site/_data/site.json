@@ -13,7 +13,9 @@
     "country": "DE"
   },
   "geo": {
-    "latitude": 51.146606,
-    "longitude": 6.43604
-  }
+    "latitude": 51.1467294,
+    "longitude": 6.4373912
+  },
+  "googleMapsUrl": "https://www.google.com/maps/place/KIBrueder+Marketing/@51.1467294,6.4373912,17z",
+  "googleMapsCid": "7330486970466270849"
 }

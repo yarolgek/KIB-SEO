@@ -21,9 +21,13 @@
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 51.146606,
-    "longitude": 6.43604
+    "latitude": 51.1467294,
+    "longitude": 6.4373912
   },
+  "hasMap": "https://www.google.com/maps?cid=7330486970466270849",
+  "sameAs": [
+    "https://www.google.com/maps/place/KIBrueder+Marketing/@51.1467294,6.4373912,17z"
+  ],
   "areaServed": [
     {
       "@type": "City",
@@ -41,7 +45,6 @@
     "Website Erstellung",
     "KI Automatisierung"
   ],
-  "sameAs": [],
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
@@ -50,10 +53,11 @@
         "Tuesday",
         "Wednesday",
         "Thursday",
-        "Friday"
+        "Friday",
+        "Saturday"
       ],
       "opens": "09:00",
-      "closes": "18:00"
+      "closes": "19:00"
     }
   ]
 }

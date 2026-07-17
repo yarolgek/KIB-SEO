@@ -1,7 +1,0 @@
-# Kept for legacy/reference only — production robots.txt is site/assets/robots.txt
-# (copied to /robots.txt by Eleventy).
-
-User-agent: *
-Allow: /
-
-Sitemap: https://kibrueder.de/sitemap.xml
