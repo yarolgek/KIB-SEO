@@ -5,6 +5,44 @@ description: "Kurzes kostenloses Gespräch: Wir zeigen Ihnen, wie Sie bei Google
 bilingual: true
 hasForms: true
 permalink: /contact/
+schema:
+  "@context": "https://schema.org"
+  "@graph":
+    - "@type": "ContactPage"
+      "@id": "https://kibrueder.de/contact/#webpage"
+      "name": "Kontakt KI Brueder"
+      "url": "https://kibrueder.de/contact/"
+      "inLanguage": "de-DE"
+      "isPartOf":
+        "@id": "https://kibrueder.de/#website"
+      "about":
+        "@id": "https://kibrueder.de/#business"
+      "mainEntity":
+        "@id": "https://kibrueder.de/#business"
+    - "@type": "ProfessionalService"
+      "@id": "https://kibrueder.de/#business"
+      "name": "KI Brueder"
+      "url": "https://kibrueder.de/"
+      "logo": "https://kibrueder.de/KIBrueder.png"
+      "email": "info@kibrueder.de"
+      "telephone": "+49-178-1698587"
+      "priceRange": "$$"
+      "address":
+        "@type": "PostalAddress"
+        "streetAddress": "Schroffstraße 29"
+        "addressLocality": "Mönchengladbach"
+        "postalCode": "41199"
+        "addressRegion": "NRW"
+        "addressCountry": "DE"
+      "geo":
+        "@type": "GeoCoordinates"
+        "latitude": 51.146606
+        "longitude": 6.43604
+      "openingHoursSpecification":
+        - "@type": "OpeningHoursSpecification"
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+          "opens": "09:00"
+          "closes": "18:00"
 ---
 <div class="pt-20">
   <div class="max-w-7xl mx-auto px-4 md:px-8 py-12">

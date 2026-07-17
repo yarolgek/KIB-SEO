@@ -1,0 +1,59 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://kibrueder.de/#business",
+  "name": "KI Brueder",
+  "alternateName": "KIBrueder Marketing",
+  "url": "https://kibrueder.de/",
+  "logo": "https://kibrueder.de/KIBrueder.png",
+  "image": "https://kibrueder.de/KIBrueder.png",
+  "email": "info@kibrueder.de",
+  "telephone": "+49-178-1698587",
+  "priceRange": "$$",
+  "description": "Local SEO, Online Marketing und KI-Automatisierung für Unternehmen in Mönchengladbach und der Niederrheinregion.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Schroffstraße 29",
+    "addressLocality": "Mönchengladbach",
+    "postalCode": "41199",
+    "addressRegion": "NRW",
+    "addressCountry": "DE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.146606,
+    "longitude": 6.43604
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Mönchengladbach"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Niederrhein"
+    }
+  ],
+  "knowsAbout": [
+    "Local SEO",
+    "Google Ads",
+    "Online Marketing",
+    "Website Erstellung",
+    "KI Automatisierung"
+  ],
+  "sameAs": [],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ]
+}

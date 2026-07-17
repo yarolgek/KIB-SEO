@@ -11,5 +11,9 @@
     "city": "Mönchengladbach",
     "postalCode": "41199",
     "country": "DE"
+  },
+  "geo": {
+    "latitude": 51.146606,
+    "longitude": 6.43604
   }
 }

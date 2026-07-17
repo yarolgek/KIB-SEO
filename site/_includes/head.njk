@@ -2,7 +2,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>{{ title }}</title>
 <meta name="description" content="{{ description }}" />
-<link rel="canonical" href="{{ site.url }}{{ page.url | replace('index.html', '') }}" />
+<meta name="theme-color" content="#f59e0b" />
+{% if noindex %}
+<meta name="robots" content="noindex, follow" />
+{% endif %}
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace('index.html', '') | replace('404.html', '') }}" />
 
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 <link rel="icon" type="image/png" sizes="32x32" href="/KIBrueder.png" />
