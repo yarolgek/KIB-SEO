@@ -5,18 +5,21 @@
     <div class="absolute w-[500px] h-[500px] blur-[120px] rounded-full bg-gradient-to-r from-orange-500/20 to-yellow-500/20 -bottom-64 -left-64 opacity-60 dark:opacity-100"></div>
   </div>
 
+  <!-- Flowing line paths (restored from original BackgroundPaths) -->
+  <div id="hero-paths" class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+
   <div class="relative z-10 container mx-auto px-4 md:px-8">
     <div class="max-w-4xl">
       <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-        <span class="block text-gray-900 dark:text-gray-200" data-i18n="hero.growth">Mehr Kunden über Google.</span>
-        <span class="block text-gray-900 dark:text-gray-200" data-i18n="hero.headaches">Weniger Stress.</span>
-        <span class="bg-gradient-to-r from-yellow-500 to-orange-500 text-transparent bg-clip-text" data-i18n="hero.guaranteed">Garantiert.</span>
+        <span class="block text-gray-900 dark:text-gray-200 hero-fade" data-i18n="hero.growth">Mehr Kunden über Google.</span>
+        <span class="block text-gray-900 dark:text-gray-200 hero-fade hero-fade-delay-1" data-i18n="hero.headaches">Weniger Stress.</span>
+        <span class="bg-gradient-to-r from-yellow-500 to-orange-500 text-transparent bg-clip-text hero-fade hero-fade-delay-2" data-i18n="hero.guaranteed">Garantiert.</span>
       </h1>
-      <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl leading-relaxed" data-i18n="hero.explainer">
+      <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl leading-relaxed hero-fade hero-fade-delay-3" data-i18n="hero.explainer">
         Wir bringen Ihr Unternehmen bei Google nach vorne – und füllen Ihren Kalender mit Anfragen.
       </p>
 
-      <div class="flex flex-wrap gap-6">
+      <div class="flex flex-wrap gap-6 hero-fade hero-fade-delay-4">
         <a href="/contact/" class="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white px-8 py-4 rounded-lg font-semibold transition-all" data-i18n="hero.cta.book">
           Kostenloses Gespräch (30 Min.)
         </a>

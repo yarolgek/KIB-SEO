@@ -15,6 +15,10 @@
       'nav.themeToggle': 'Toggle theme',
       'nav.menuOpen': 'Open menu',
       'footer.services': 'Services',
+      'footer.cat.seo': 'SEO & Local',
+      'footer.cat.website': 'Website & Design',
+      'footer.cat.ads': 'Ads & Marketing',
+      'footer.cat.growth': 'Conversion & AI',
       'footer.quickLinks': 'Quick Links',
       'footer.contact': 'Contact',
       'footer.imprint': 'Imprint',
@@ -145,6 +149,10 @@
       'nav.themeToggle': 'Theme umschalten',
       'nav.menuOpen': 'Menü öffnen',
       'footer.services': 'Dienstleistungen',
+      'footer.cat.seo': 'SEO & Lokal',
+      'footer.cat.website': 'Website & Design',
+      'footer.cat.ads': 'Ads & Marketing',
+      'footer.cat.growth': 'Conversion & KI',
       'footer.quickLinks': 'Schnelllinks',
       'footer.contact': 'Kontakt',
       'footer.imprint': 'Impressum',
@@ -264,9 +272,12 @@
     },
   };
 
-  let current = localStorage.getItem('language') || 'de';
+  // German is the default for first-time visitors; EN only after an explicit switch.
+  const savedLang = localStorage.getItem('language');
+  let current = savedLang === 'en' || savedLang === 'de' ? savedLang : 'de';
 
   function applyLanguage(lang) {
+    if (lang !== 'en' && lang !== 'de') lang = 'de';
     current = lang;
     localStorage.setItem('language', lang);
     document.documentElement.lang = lang;

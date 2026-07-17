@@ -1,86 +1,100 @@
-<footer class="border-t border-gray-200 dark:border-gray-800 pt-20 pb-12 px-4 md:px-8">
+<footer class="border-t border-gray-200 dark:border-gray-800 pt-16 pb-12 px-4 md:px-8">
   <div class="max-w-7xl mx-auto">
-    <div class="grid md:grid-cols-3 gap-12">
+
+    {# —— Schnelllinks & Kontakt —— #}
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10 mb-12">
       <div>
-        <h4 class="font-semibold mb-4" data-i18n="footer.services">Dienstleistungen</h4>
-        <div class="grid grid-cols-2 gap-x-6 gap-y-2">
-          <ul class="space-y-2 text-gray-600 dark:text-gray-400">
-            <li><a href="/ai/" class="hover:text-gray-900 dark:hover:text-white transition-colors">KI Lösungen</a></li>
+        <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-4" data-i18n="footer.quickLinks">Schnelllinks</h4>
+        <ul class="space-y-2.5 text-sm text-gray-500 dark:text-gray-400">
+          <li><a href="/" class="hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="nav.home">Startseite</a></li>
+          <li><a href="/about/" class="hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="nav.about">Über uns</a></li>
+          <li><a href="/#services" class="hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="nav.services">Dienstleistungen</a></li>
+          <li><a href="/regionen/" class="hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="nav.regions">Regionen</a></li>
+          <li><a href="/contact/" class="hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="nav.contact">Kontakt</a></li>
+          <li><a href="/imprint/" class="hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="footer.imprint">Impressum</a></li>
+          <li><a href="/privacy/" class="hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="footer.privacy">Datenschutz</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-4" data-i18n="footer.contact">Kontakt</h4>
+        <ul class="space-y-2.5 text-sm text-gray-500 dark:text-gray-400">
+          <li>{{ site.email }}</li>
+          <li>{{ site.phone }}</li>
+        </ul>
+      </div>
+    </div>
+
+    {# —— Dienstleistungen —— #}
+    <div class="border-t border-gray-200 dark:border-gray-800 pt-12 mb-12">
+      <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-8" data-i18n="footer.services">Dienstleistungen</h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wide text-gray-900 dark:text-white mb-4" data-i18n="footer.cat.seo">SEO &amp; Lokal</h4>
+          <ul class="space-y-2.5 text-sm text-gray-500 dark:text-gray-400">
             <li><a href="/local-seo/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Local SEO</a></li>
             <li><a href="/seo/" class="hover:text-gray-900 dark:hover:text-white transition-colors">SEO</a></li>
             <li><a href="/seo-services/" class="hover:text-gray-900 dark:hover:text-white transition-colors">SEO Services</a></li>
             <li><a href="/seo-analyse/" class="hover:text-gray-900 dark:hover:text-white transition-colors">SEO Analyse</a></li>
+            <li><a href="/google-maps-optimierung/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Google Maps Optimierung</a></li>
+            <li><a href="/google-business-profile/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Google Business Profile</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wide text-gray-900 dark:text-white mb-4" data-i18n="footer.cat.website">Website &amp; Design</h4>
+          <ul class="space-y-2.5 text-sm text-gray-500 dark:text-gray-400">
             <li><a href="/website-erstellung/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Website Erstellung</a></li>
             <li><a href="/website-optimierung/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Website Optimierung</a></li>
             <li><a href="/landing-page-design/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Landing Page Design</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wide text-gray-900 dark:text-white mb-4" data-i18n="footer.cat.ads">Ads &amp; Marketing</h4>
+          <ul class="space-y-2.5 text-sm text-gray-500 dark:text-gray-400">
             <li><a href="/google-ads/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Google Ads Management</a></li>
             <li><a href="/facebook-ads/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Facebook Ads</a></li>
-          </ul>
-          <ul class="space-y-2 text-gray-600 dark:text-gray-400">
             <li><a href="/meta-ads/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Meta Ads</a></li>
             <li><a href="/digitale-werbung/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Digitale Werbung</a></li>
             <li><a href="/search-engine-marketing/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Search Engine Marketing</a></li>
             <li><a href="/email-marketing/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Email Marketing</a></li>
-            <li><a href="/google-maps-optimierung/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Google Maps Optimierung</a></li>
-            <li><a href="/google-business-profile/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Google Business Profile</a></li>
-            <li><a href="/lead-generierung/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Lead Generierung</a></li>
-            <li><a href="/conversion-optimierung/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Conversion Optimierung</a></li>
-            <li><a href="/web-analyse-setup/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Web Analyse Setup</a></li>
             <li><a href="/ads/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Online Marketing</a></li>
           </ul>
         </div>
-      </div>
-
-      <div>
-        <h4 class="font-semibold mb-4" data-i18n="nav.regions">Regionen</h4>
-        <div class="grid grid-cols-2 gap-x-6 gap-y-2">
-          <ul class="space-y-2 text-gray-600 dark:text-gray-400">
-            <li><a href="/regionen/" class="hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="footer.allRegions">Alle Regionen</a></li>
-            <li><a href="/regionen/rheydt/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Rheydt</a></li>
-            <li><a href="/regionen/wickrath/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Wickrath</a></li>
-            <li><a href="/regionen/odenkirchen/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Odenkirchen</a></li>
-            <li><a href="/regionen/giesenkirchen/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Giesenkirchen</a></li>
-            <li><a href="/regionen/hardterbroich/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Hardterbroich</a></li>
-            <li><a href="/regionen/holt/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Holt</a></li>
-            <li><a href="/regionen/geistenbeck/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Geistenbeck</a></li>
-          </ul>
-          <ul class="space-y-2 text-gray-600 dark:text-gray-400">
-            <li><a href="/regionen/eicken/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Eicken</a></li>
-            <li><a href="/regionen/rheindahlen/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Rheindahlen</a></li>
-            <li><a href="/regionen/korschenbroich/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Korschenbroich</a></li>
-            <li><a href="/regionen/grevenbroich/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Grevenbroich</a></li>
-            <li><a href="/regionen/erkelenz/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Erkelenz</a></li>
-            <li><a href="/regionen/moenchengladbach-sued/" class="hover:text-gray-900 dark:hover:text-white transition-colors">MG Süd</a></li>
-            <li><a href="/regionen/moenchengladbach-nord/" class="hover:text-gray-900 dark:hover:text-white transition-colors">MG Nord</a></li>
-            <li><a href="/regionen/moenchengladbach-ost/" class="hover:text-gray-900 dark:hover:text-white transition-colors">MG Ost</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-2 gap-8">
         <div>
-          <h4 class="font-semibold mb-4" data-i18n="footer.quickLinks">Schnelllinks</h4>
-          <ul class="space-y-2 text-gray-600 dark:text-gray-400">
-            <li><a href="/" class="hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="nav.home">Startseite</a></li>
-            <li><a href="/about/" class="hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="nav.about">Über uns</a></li>
-            <li><a href="/#services" class="hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="nav.services">Dienstleistungen</a></li>
-            <li><a href="/regionen/" class="hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="nav.regions">Regionen</a></li>
-            <li><a href="/contact/" class="hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="nav.contact">Kontakt</a></li>
-            <li><a href="/imprint/" class="hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="footer.imprint">Impressum</a></li>
-            <li><a href="/privacy/" class="hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="footer.privacy">Datenschutz</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-semibold mb-4" data-i18n="footer.contact">Kontakt</h4>
-          <ul class="space-y-2 text-gray-600 dark:text-gray-400">
-            <li>{{ site.email }}</li>
-            <li>{{ site.phone }}</li>
+          <h4 class="text-xs font-bold uppercase tracking-wide text-gray-900 dark:text-white mb-4" data-i18n="footer.cat.growth">Conversion &amp; KI</h4>
+          <ul class="space-y-2.5 text-sm text-gray-500 dark:text-gray-400">
+            <li><a href="/ai/" class="hover:text-gray-900 dark:hover:text-white transition-colors">KI Lösungen</a></li>
+            <li><a href="/lead-generierung/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Lead Generierung</a></li>
+            <li><a href="/conversion-optimierung/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Conversion Optimierung</a></li>
+            <li><a href="/web-analyse-setup/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Web Analyse Setup</a></li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 text-gray-600 dark:text-gray-400 text-sm text-center">
-      <p>© 2025 KI Brueder.</p>
+
+    {# —— Regionen —— #}
+    <div class="border-t border-gray-200 dark:border-gray-800 pt-12 mb-12">
+      <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-8" data-i18n="nav.regions">Regionen</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-2.5 text-sm text-gray-500 dark:text-gray-400">
+        <a href="/regionen/" class="hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="footer.allRegions">Alle Regionen</a>
+        <a href="/regionen/rheydt/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Rheydt</a>
+        <a href="/regionen/wickrath/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Wickrath</a>
+        <a href="/regionen/odenkirchen/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Odenkirchen</a>
+        <a href="/regionen/giesenkirchen/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Giesenkirchen</a>
+        <a href="/regionen/hardterbroich/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Hardterbroich</a>
+        <a href="/regionen/holt/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Holt</a>
+        <a href="/regionen/geistenbeck/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Geistenbeck</a>
+        <a href="/regionen/eicken/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Eicken</a>
+        <a href="/regionen/rheindahlen/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Rheindahlen</a>
+        <a href="/regionen/korschenbroich/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Korschenbroich</a>
+        <a href="/regionen/grevenbroich/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Grevenbroich</a>
+        <a href="/regionen/erkelenz/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Erkelenz</a>
+        <a href="/regionen/moenchengladbach-sued/" class="hover:text-gray-900 dark:hover:text-white transition-colors">MG Süd</a>
+        <a href="/regionen/moenchengladbach-nord/" class="hover:text-gray-900 dark:hover:text-white transition-colors">MG Nord</a>
+        <a href="/regionen/moenchengladbach-ost/" class="hover:text-gray-900 dark:hover:text-white transition-colors">MG Ost</a>
+      </div>
     </div>
+
+    <p class="border-t border-gray-200 dark:border-gray-800 pt-8 text-center text-sm text-gray-500 dark:text-gray-400">© 2026 KI Brueder.</p>
+
   </div>
 </footer>
