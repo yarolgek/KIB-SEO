@@ -4,7 +4,7 @@
 KI Brueder (Ghajar Amirnezami, Nima & Saman GbR) hilft Unternehmen, bei Google gefunden zu werden und mehr qualifizierte Kundenanfragen zu bekommen. Schwerpunkt: Local SEO, Google Maps / Google Business Profile, bezahlte Werbung und KI-gestützte Lead-Generierung.
 
 - Website: https://kibrueder.de/
-- Kontakt: https://kibrueder.de/contact/
+- Kontakt: https://kibrueder.de/kontakt/
 - E-Mail: info@kibrueder.de
 - Telefon: +49 178 1698587
 - Standort: Schroffstraße 29, 41199 Mönchengladbach, Germany
@@ -13,8 +13,8 @@ KI Brueder (Ghajar Amirnezami, Nima & Saman GbR) hilft Unternehmen, bei Google g
 
 ## Kernseiten
 - [Startseite](https://kibrueder.de/): Überblick über Leistungen und Angebot
-- [Über uns](https://kibrueder.de/about/): Team und Mission
-- [Kontakt](https://kibrueder.de/contact/): Kostenloses Gespräch (30 Min.)
+- [Über uns](https://kibrueder.de/ueber-uns/): Team und Mission
+- [Kontakt](https://kibrueder.de/kontakt/): Kostenloses Gespräch (30 Min.)
 - [Blog](https://kibrueder.de/blog/): Einblicke zu Local SEO, Marketing und Wachstum
 
 ## Leistungen
@@ -50,8 +50,8 @@ KI Brueder (Ghajar Amirnezami, Nima & Saman GbR) hilft Unternehmen, bei Google g
 - [Rheindahlen](https://kibrueder.de/regionen/rheindahlen/)
 
 ## Rechtliches
-- [Impressum](https://kibrueder.de/imprint/)
-- [Datenschutz](https://kibrueder.de/privacy/)
+- [Impressum](https://kibrueder.de/impressum/)
+- [Datenschutz](https://kibrueder.de/datenschutz/)
 
 ## Optional
 - [Newsletter](https://kibrueder.de/newsletter/): Tipps zu Local SEO und Wachstum

@@ -11,6 +11,46 @@
 [context.branch-deploy]
   command = "npm run build"
 
+[[redirects]]
+  from = "/contact"
+  to = "/kontakt/"
+  status = 301
+
+[[redirects]]
+  from = "/contact/"
+  to = "/kontakt/"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/ueber-uns/"
+  status = 301
+
+[[redirects]]
+  from = "/about/"
+  to = "/ueber-uns/"
+  status = 301
+
+[[redirects]]
+  from = "/privacy"
+  to = "/datenschutz/"
+  status = 301
+
+[[redirects]]
+  from = "/privacy/"
+  to = "/datenschutz/"
+  status = 301
+
+[[redirects]]
+  from = "/imprint"
+  to = "/impressum/"
+  status = 301
+
+[[redirects]]
+  from = "/imprint/"
+  to = "/impressum/"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]

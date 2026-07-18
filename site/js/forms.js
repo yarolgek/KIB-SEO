@@ -67,7 +67,7 @@ if (contactForm) {
       params.set('form-name', 'contact');
       Object.entries(data).forEach(([key, value]) => params.set(key, value));
 
-      const res = await fetch('/contact/', {
+      const res = await fetch('/kontakt/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: params.toString(),

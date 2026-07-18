@@ -11,7 +11,7 @@ const supabaseAnonKey = process.env.SUPABASE_ANON_KEY || process.env.VITE_SUPABA
 const content = `window.SITE_CONFIG = {
   supabaseUrl: ${JSON.stringify(supabaseUrl)},
   supabaseAnonKey: ${JSON.stringify(supabaseAnonKey)},
-  // Contact form uses Netlify Forms (see site/contact + forms.js)
+  // Contact form uses Netlify Forms (see site/kontakt + forms.js)
   newsletterWebhook: 'https://hook.eu2.make.com/ksfuh0scnsz9wdo9idv88j8kbpwfds73',
 };
 `;

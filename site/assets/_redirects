@@ -1,2 +1,9 @@
-# Static site — no SPA fallback.
-# Netlify serves /path/ → /path/index.html automatically.
+# Old English URLs → German (301)
+/contact    /kontakt/    301
+/contact/   /kontakt/    301
+/about      /ueber-uns/  301
+/about/     /ueber-uns/  301
+/privacy    /datenschutz/ 301
+/privacy/   /datenschutz/ 301
+/imprint    /impressum/  301
+/imprint/   /impressum/  301

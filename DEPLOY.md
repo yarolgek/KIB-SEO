@@ -47,7 +47,7 @@ git push origin main
 
 ## Forms
 
-- **Contact** → Netlify Forms (`name="contact"` on `/contact/`). Enable email alerts under **Netlify → Forms → Form notifications**.
+- **Contact** → Netlify Forms (`name="contact"` on `/kontakt/`). Enable email alerts under **Netlify → Forms → Form notifications**.
 - **Newsletter** → Supabase `newsletter_subscriptions` + optional Make.com webhook (needs env vars above)
 
 ## Language
@@ -58,4 +58,4 @@ git push origin main
 ## Privacy / Analytics
 
 - Google Analytics loads only after cookie accept (`site/js/main.js`).
-- Privacy copy: `/privacy/`
+- Privacy copy: `/datenschutz/`
