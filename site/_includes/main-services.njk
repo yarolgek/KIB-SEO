@@ -1,0 +1,22 @@
+{# Optional: sectionId, compact (bool) #}
+{% set _id = sectionId or "leistungen" %}
+<section id="{{ _id }}" class="{% if compact %}py-12{% else %}py-16{% endif %} px-4 md:px-8 max-w-7xl mx-auto">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center" data-i18n="home.servicesList.title">
+    Unsere Hauptleistungen
+  </h2>
+  <p class="text-gray-600 dark:text-gray-400 text-lg mb-10 text-center max-w-2xl mx-auto" data-i18n="home.servicesList.subtitle">
+    Local SEO, Google Ads, Websites und KI – die Hebel für mehr Anfragen aus Ihrer Region.
+  </p>
+  <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto text-sm">
+    <li><a href="/local-seo/" class="block p-4 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-yellow-500/50 transition-colors">Local SEO</a></li>
+    <li><a href="/seo/" class="block p-4 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-yellow-500/50 transition-colors">SEO</a></li>
+    <li><a href="/geo-aeo/" class="block p-4 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-yellow-500/50 transition-colors">GEO &amp; AEO</a></li>
+    <li><a href="/google-ads/" class="block p-4 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-yellow-500/50 transition-colors">Google Ads</a></li>
+    <li><a href="/ads/" class="block p-4 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-yellow-500/50 transition-colors">Online Marketing / Ads</a></li>
+    <li><a href="/website-erstellung/" class="block p-4 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-yellow-500/50 transition-colors">Website Erstellung</a></li>
+    <li><a href="/google-business-profile/" class="block p-4 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-yellow-500/50 transition-colors">Google Business Profile</a></li>
+    <li><a href="/google-maps-optimierung/" class="block p-4 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-yellow-500/50 transition-colors">Google Maps Optimierung</a></li>
+    <li><a href="/ai/" class="block p-4 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-yellow-500/50 transition-colors">KI Lösungen</a></li>
+    <li><a href="/lead-generierung/" class="block p-4 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-yellow-500/50 transition-colors">Lead Generierung</a></li>
+  </ul>
+</section>

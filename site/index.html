@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: "KI Brueder | Local SEO & Online Marketing Mönchengladbach"
+title: "Bester Local SEO Mönchengladbach – Local SEO, Google Ads & Online Marketing in der Nähe | KI Brueder"
 description: "Mehr Kunden über Google: Local SEO, Anzeigen und KI-Automatisierung für Unternehmen in Mönchengladbach und Umgebung."
 bilingual: true
 hasForms: false
@@ -8,7 +8,7 @@ permalink: /
 schema:
   "@context": "https://schema.org"
   "@graph":
-    - "@type": "ProfessionalService"
+    - "@type": "LocalBusiness"
       "@id": "https://kibrueder.de/#business"
       "name": "KI Brueder"
       "alternateName": "KIBrueder Marketing"
@@ -44,6 +44,8 @@ schema:
         - "Online Marketing"
         - "Website Erstellung"
         - "KI Automatisierung"
+        - "Generative Engine Optimization"
+        - "AI Search Visibility"
       "openingHoursSpecification":
         - "@type": "OpeningHoursSpecification"
           "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
@@ -64,15 +66,15 @@ schema:
 <!-- Services -->
 <section id="services" class="py-20 px-4 md:px-8 max-w-7xl mx-auto">
   <h2 class="text-4xl md:text-5xl font-bold mb-6 text-center" data-animate data-i18n="services.title">
-    Drei Wege zu mehr Kunden
+    Local SEO, Google Ads &amp; KI
   </h2>
   <p class="text-gray-600 dark:text-gray-400 text-lg mb-12 text-center max-w-3xl mx-auto" data-animate data-i18n="services.subtitle">
-    Wählen Sie den Weg, der zu Ihnen passt – oder lassen Sie uns gemeinsam den richtigen finden.
+    Die Leistungen, mit denen lokale Unternehmen bei Google mehr Anfragen gewinnen.
   </p>
 
   <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
     {% set href = "/local-seo/" %}
-    {% set title = "Bei Google oben erscheinen" %}
+    {% set title = "Local SEO" %}
     {% set features = ["In Google Maps gefunden werden", "Mehr Anrufe aus der Region", "Website, die überzeugt"] %}
     {% set icon = "icons/settings.njk" %}
     {% set titleKey = "services.seo.title" %}
@@ -80,7 +82,7 @@ schema:
     {% include "service-card.njk" %}
 
     {% set href = "/ads/" %}
-    {% set title = "Sofort Kunden über Anzeigen" %}
+    {% set title = "Google Ads & Online Marketing" %}
     {% set features = ["Google Ads", "Meta Ads (Facebook & Instagram)", "Performance-Optimierung"] %}
     {% set icon = "icons/mail.njk" %}
     {% set titleKey = "services.ads.title" %}
@@ -88,7 +90,7 @@ schema:
     {% include "service-card.njk" %}
 
     {% set href = "/ai/" %}
-    {% set title = "KI" %}
+    {% set title = "KI Lösungen" %}
     {% set features = ["KI-Chat", "KI-Anrufassistent", "Automatisierungen"] %}
     {% set icon = "icons/message-circle.njk" %}
     {% set titleKey = "services.ai.title" %}
@@ -96,6 +98,8 @@ schema:
     {% include "service-card.njk" %}
   </div>
 </section>
+
+{% include "home-ai-visibility.njk" %}
 
 <!-- Final CTA -->
 <section class="py-20 px-4 md:px-8 max-w-7xl mx-auto text-center">

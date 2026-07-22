@@ -17,10 +17,13 @@
       </div>
       <div>
         <p class="text-sm font-bold text-gray-900 dark:text-white mb-4" data-i18n="footer.contact">Kontakt</p>
-        <ul class="space-y-2.5 text-sm text-gray-500 dark:text-gray-400">
-          <li>{{ site.email }}</li>
-          <li>{{ site.phone }}</li>
-        </ul>
+        <address class="not-italic space-y-2.5 text-sm text-gray-500 dark:text-gray-400">
+          <p class="font-medium text-gray-900 dark:text-white">{{ site.name }}</p>
+          <p>{{ site.address.street }}</p>
+          <p>{{ site.address.postalCode }} {{ site.address.city }}</p>
+          <p><a href="tel:{{ site.phone | replace(' ', '') }}" class="hover:text-gray-900 dark:hover:text-white transition-colors">{{ site.phone }}</a></p>
+          <p><a href="mailto:{{ site.email }}" class="hover:text-gray-900 dark:hover:text-white transition-colors">{{ site.email }}</a></p>
+        </address>
       </div>
     </div>
 
@@ -33,6 +36,7 @@
           <ul class="space-y-2.5 text-sm text-gray-500 dark:text-gray-400">
             <li><a href="/local-seo/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Local SEO</a></li>
             <li><a href="/seo/" class="hover:text-gray-900 dark:hover:text-white transition-colors">SEO</a></li>
+            <li><a href="/geo-aeo/" class="hover:text-gray-900 dark:hover:text-white transition-colors">GEO &amp; AEO</a></li>
             <li><a href="/seo-services/" class="hover:text-gray-900 dark:hover:text-white transition-colors">SEO Services</a></li>
             <li><a href="/seo-analyse/" class="hover:text-gray-900 dark:hover:text-white transition-colors">SEO Analyse</a></li>
             <li><a href="/google-maps-optimierung/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Google Maps Optimierung</a></li>
@@ -76,21 +80,9 @@
       <p class="text-lg font-bold text-gray-900 dark:text-white mb-8" data-i18n="nav.regions">Regionen</p>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-2.5 text-sm text-gray-500 dark:text-gray-400">
         <a href="/regionen/" class="hover:text-gray-900 dark:hover:text-white transition-colors" data-i18n="footer.allRegions">Alle Regionen</a>
-        <a href="/regionen/rheydt/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Rheydt</a>
-        <a href="/regionen/wickrath/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Wickrath</a>
-        <a href="/regionen/odenkirchen/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Odenkirchen</a>
-        <a href="/regionen/giesenkirchen/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Giesenkirchen</a>
-        <a href="/regionen/hardterbroich/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Hardterbroich</a>
-        <a href="/regionen/holt/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Holt</a>
-        <a href="/regionen/geistenbeck/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Geistenbeck</a>
-        <a href="/regionen/eicken/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Eicken</a>
-        <a href="/regionen/rheindahlen/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Rheindahlen</a>
-        <a href="/regionen/korschenbroich/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Korschenbroich</a>
-        <a href="/regionen/grevenbroich/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Grevenbroich</a>
-        <a href="/regionen/erkelenz/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Erkelenz</a>
-        <a href="/regionen/moenchengladbach-sued/" class="hover:text-gray-900 dark:hover:text-white transition-colors">MG Süd</a>
-        <a href="/regionen/moenchengladbach-nord/" class="hover:text-gray-900 dark:hover:text-white transition-colors">MG Nord</a>
-        <a href="/regionen/moenchengladbach-ost/" class="hover:text-gray-900 dark:hover:text-white transition-colors">MG Ost</a>
+        {% for area in regions %}
+        <a href="{{ area.href }}" class="hover:text-gray-900 dark:hover:text-white transition-colors">{{ area.label }}</a>
+        {% endfor %}
       </div>
     </div>
 

@@ -19,7 +19,7 @@ schema:
         "@id": "https://kibrueder.de/#business"
       "mainEntity":
         "@id": "https://kibrueder.de/#business"
-    - "@type": "ProfessionalService"
+    - "@type": "LocalBusiness"
       "@id": "https://kibrueder.de/#business"
       "name": "KI Brueder"
       "url": "https://kibrueder.de/"
@@ -148,14 +148,26 @@ schema:
       </form>
     </div>
 
-    <div class="max-w-3xl mx-auto grid md:grid-cols-2 gap-8 text-center md:text-left">
+    {% set compact = true %}
+    {% set sectionId = "kontakt-leistungen" %}
+    {% include "main-services.njk" %}
+
+    <div class="max-w-3xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left mb-12">
+      <div class="hover-card p-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
+        <h3 class="font-semibold mb-2" data-i18n="contact.addressLabel">Adresse</h3>
+        <address class="not-italic text-gray-600 dark:text-gray-400">
+          <p class="font-medium text-gray-900 dark:text-white">{{ site.name }}</p>
+          <p>{{ site.address.street }}</p>
+          <p>{{ site.address.postalCode }} {{ site.address.city }}</p>
+        </address>
+      </div>
       <div class="hover-card p-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
         <h3 class="font-semibold mb-2" data-i18n="contact.form.emailLabel">E-Mail</h3>
-        <a href="mailto:info@kibrueder.de" class="text-yellow-600 dark:text-yellow-400 hover:underline">info@kibrueder.de</a>
+        <a href="mailto:{{ site.email }}" class="text-yellow-600 dark:text-yellow-400 hover:underline">{{ site.email }}</a>
       </div>
       <div class="hover-card p-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
         <h3 class="font-semibold mb-2" data-i18n="contact.form.phoneLabel">Telefon</h3>
-        <a href="tel:+491781698587" class="text-yellow-600 dark:text-yellow-400 hover:underline">+49 178 1698587</a>
+        <a href="tel:{{ site.phone | replace(' ', '') }}" class="text-yellow-600 dark:text-yellow-400 hover:underline">{{ site.phone }}</a>
       </div>
     </div>
   </div>

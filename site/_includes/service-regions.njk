@@ -1,26 +1,11 @@
 <section class="mb-16">
-  <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-3">Unternehmen aus der Region die wir betreuen</h2>
+  <h2 class="text-lg font-bold text-gray-900 dark:text-white mb-3">Gebiete die wir betreuen</h2>
   <p class="text-gray-500 dark:text-gray-400 mb-8 text-sm leading-relaxed max-w-3xl">
     Wir arbeiten vollständig online und betreuen Kunden deutschlandweit. Besonders viele unserer Kunden kommen aus Mönchengladbach und der direkten Umgebung – hier kennen wir den lokalen Markt, die Wettbewerbssituation und die Suchgewohnheiten aus dem Effeff.
   </p>
   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-2.5 text-sm text-gray-500 dark:text-gray-400 mb-6">
-    {% for area in [
-      { "label": "Mönchengladbach", "href": "/" },
-      { "label": "Rheydt", "href": "/regionen/rheydt/" },
-      { "label": "Wickrath", "href": "/regionen/wickrath/" },
-      { "label": "Odenkirchen", "href": "/regionen/odenkirchen/" },
-      { "label": "Giesenkirchen", "href": "/regionen/giesenkirchen/" },
-      { "label": "Hardterbroich", "href": "/regionen/hardterbroich/" },
-      { "label": "Holt", "href": "/regionen/holt/" },
-      { "label": "Geistenbeck", "href": "/regionen/geistenbeck/" },
-      { "label": "Eicken", "href": "/regionen/eicken/" },
-      { "label": "Rheindahlen", "href": "/regionen/rheindahlen/" },
-      { "label": "Korschenbroich", "href": "/regionen/korschenbroich/" },
-      { "label": "Grevenbroich", "href": "/regionen/grevenbroich/" },
-      { "label": "Erkelenz", "href": "/regionen/erkelenz/" },
-      { "label": "MG Süd", "href": "/regionen/moenchengladbach-sued/" },
-      { "label": "MG Nord", "href": "/regionen/moenchengladbach-nord/" }
-    ] %}
+    <a href="/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Mönchengladbach</a>
+    {% for area in regions %}
     <a href="{{ area.href }}" class="hover:text-gray-900 dark:hover:text-white transition-colors">
       {{ area.label }}
     </a>
@@ -29,5 +14,7 @@
   <p class="text-gray-500 text-sm">
     Nicht dabei? Kein Problem –
     <a href="/kontakt/" class="text-gray-700 dark:text-gray-300 underline underline-offset-2 hover:text-gray-900 dark:hover:text-white">wir betreuen Unternehmen in ganz Deutschland.</a>
+    ·
+    <a href="/regionen/" class="text-gray-700 dark:text-gray-300 underline underline-offset-2 hover:text-gray-900 dark:hover:text-white">Alle Regionen</a>
   </p>
 </section>

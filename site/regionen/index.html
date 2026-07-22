@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: "Bester Online Marketing Agentur Niederrhein – Regionen die wir betreuen | KI Brueder"
+title: "Bester Online Marketing Agentur Niederrhein – Gebiete die wir betreuen in der Nähe | KI Brueder"
 description: "KI Brueder ist in Mönchengladbach verwurzelt – aber wir helfen Unternehmen in der gesamten Umgebung, bei Google sichtbar zu werden. Von Rheydt und Wickrath"
 bilingual: false
 hasForms: false
@@ -8,8 +8,8 @@ permalink: /regionen/
 ---
 <main class="max-w-4xl mx-auto px-4 py-32">
 <div class="mb-16">
-  <span class="text-yellow-500 font-semibold text-sm uppercase tracking-widest">Regionen die wir betreuen</span>
-  <h1 class="text-4xl md:text-5xl font-bold mt-3 mb-6 leading-tight">Online Marketing Agentur Niederrhein – Regionen die wir betreuen</h1>
+  <span class="text-yellow-500 font-semibold text-sm uppercase tracking-widest">Gebiete die wir betreuen</span>
+  <h1 class="text-4xl md:text-5xl font-bold mt-3 mb-6 leading-tight">Online Marketing Agentur Niederrhein – Gebiete die wir betreuen</h1>
   <p class="text-xl text-gray-600 dark:text-gray-400 leading-relaxed">KI Brueder ist in Mönchengladbach verwurzelt – aber wir helfen Unternehmen in der gesamten Umgebung, bei Google sichtbar zu werden. Von Rheydt und Wickrath über Korschenbroich bis nach Grevenbroich und Erkelenz: Wir bringen lokale Unternehmen bei Google nach vorne.</p>
 </div>
 <section class="mb-16">
@@ -26,28 +26,14 @@ permalink: /regionen/
   </div>
 </section>
 <section class="mb-16">
-  <h2 class="text-3xl font-bold mb-8">Regionen die wir betreuen</h2>
+  <h2 class="text-3xl font-bold mb-8">Gebiete die wir betreuen</h2>
   <div class="grid md:grid-cols-2 gap-4">
-    <a href="/regionen/rheydt/" class="block border border-gray-200 dark:border-gray-800 hover:border-yellow-500/50 rounded-xl p-5 transition-all hover:shadow-md group">
-      <h3 class="font-bold text-lg mb-1 group-hover:text-yellow-500 transition-colors">Rheydt</h3>
-      <p class="text-gray-600 dark:text-gray-400 text-sm">Stadtteil von Mönchengladbach – Local SEO, Google Ads &amp; Websites für Rheydter Unternehmen</p>
+    {% for area in regions %}
+    <a href="{{ area.href }}" class="block border border-gray-200 dark:border-gray-800 hover:border-yellow-500/50 rounded-xl p-5 transition-all hover:shadow-md group">
+      <h3 class="font-bold text-lg mb-1 group-hover:text-yellow-500 transition-colors">{{ area.label }}</h3>
+      <p class="text-gray-600 dark:text-gray-400 text-sm">{{ area.blurb }}</p>
     </a>
-    <a href="/regionen/wickrath/" class="block border border-gray-200 dark:border-gray-800 hover:border-yellow-500/50 rounded-xl p-5 transition-all hover:shadow-md group">
-      <h3 class="font-bold text-lg mb-1 group-hover:text-yellow-500 transition-colors">Wickrath</h3>
-      <p class="text-gray-600 dark:text-gray-400 text-sm">Historischer Stadtteil – Online Marketing für lokale Betriebe in Wickrath</p>
-    </a>
-    <a href="/regionen/korschenbroich/" class="block border border-gray-200 dark:border-gray-800 hover:border-yellow-500/50 rounded-xl p-5 transition-all hover:shadow-md group">
-      <h3 class="font-bold text-lg mb-1 group-hover:text-yellow-500 transition-colors">Korschenbroich</h3>
-      <p class="text-gray-600 dark:text-gray-400 text-sm">Wachsende Gemeinde – Local SEO &amp; Google Ads für Korschenbroicher Unternehmen</p>
-    </a>
-    <a href="/regionen/grevenbroich/" class="block border border-gray-200 dark:border-gray-800 hover:border-yellow-500/50 rounded-xl p-5 transition-all hover:shadow-md group">
-      <h3 class="font-bold text-lg mb-1 group-hover:text-yellow-500 transition-colors">Grevenbroich</h3>
-      <p class="text-gray-600 dark:text-gray-400 text-sm">Wirtschaftsstandort Rhein – Online Marketing für Grevenbroicher Betriebe</p>
-    </a>
-    <a href="/regionen/erkelenz/" class="block border border-gray-200 dark:border-gray-800 hover:border-yellow-500/50 rounded-xl p-5 transition-all hover:shadow-md group">
-      <h3 class="font-bold text-lg mb-1 group-hover:text-yellow-500 transition-colors">Erkelenz</h3>
-      <p class="text-gray-600 dark:text-gray-400 text-sm">Kreis Heinsberg – Local SEO, Google Ads &amp; Websites für Erkelenzer Unternehmen</p>
-    </a>
+    {% endfor %}
   </div>
 </section>
 <section class="mb-16">

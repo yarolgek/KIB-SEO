@@ -1,0 +1,20 @@
+{# Optional: sectionId, headingTag (h2 default), compact (bool) #}
+{% set _id = sectionId or "gebiete" %}
+{% set _tag = headingTag or "h2" %}
+<section id="{{ _id }}" class="{% if compact %}py-12{% else %}py-20{% endif %} px-4 md:px-8 max-w-7xl mx-auto">
+  <{{ _tag }} class="text-3xl md:text-4xl font-bold mb-4 text-center" data-i18n="home.areas.title">
+    Gebiete die wir betreuen
+  </{{ _tag }}>
+  <p class="text-gray-600 dark:text-gray-400 text-lg mb-10 text-center max-w-2xl mx-auto" data-i18n="home.areas.subtitle">
+    Local SEO und Online Marketing in Mönchengladbach und der Region – und deutschlandweit online.
+  </p>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-3 text-sm text-gray-600 dark:text-gray-400 max-w-5xl mx-auto mb-8">
+    <a href="/" class="hover:text-gray-900 dark:hover:text-white transition-colors font-medium text-gray-900 dark:text-white">Mönchengladbach</a>
+    {% for area in regions %}
+    <a href="{{ area.href }}" class="hover:text-gray-900 dark:hover:text-white transition-colors">{{ area.label }}</a>
+    {% endfor %}
+  </div>
+  <p class="text-center text-sm text-gray-500 dark:text-gray-400">
+    <a href="/regionen/" class="underline underline-offset-2 hover:text-gray-900 dark:hover:text-white" data-i18n="footer.allRegions">Alle Regionen</a>
+  </p>
+</section>

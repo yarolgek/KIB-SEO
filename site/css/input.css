@@ -90,7 +90,7 @@
 .hover-card {
   position: relative;
   overflow: hidden;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hover-card::after {
@@ -118,14 +118,15 @@
 .hover-card:hover,
 .dark .hover-card:hover {
   border-color: rgba(234, 179, 8, 0.5);
+  transform: translateY(-0.25rem);
 }
 
 .hover-card:hover {
-  box-shadow: 0 0 30px rgba(234, 179, 8, 0.2);
+  box-shadow: 0 8px 30px rgba(234, 179, 8, 0.18);
 }
 
 .dark .hover-card:hover {
-  box-shadow: 0 0 30px rgba(234, 179, 8, 0.18);
+  box-shadow: 0 8px 30px rgba(234, 179, 8, 0.12);
 }
 
 .hover-card:hover::after {
@@ -164,6 +165,52 @@
 
 .hover-card:hover img {
   transform: scale(1.05);
+}
+
+/* Service / region subpage content blocks (Leistungen, Prozess, FAQ, Tipps) */
+main .rounded-xl.border.border-gray-200,
+main .rounded-xl.border.border-yellow-200 {
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+main .rounded-xl.border.border-gray-200:hover {
+  transform: translateY(-0.25rem);
+  border-color: rgba(234, 179, 8, 0.5);
+  box-shadow: 0 8px 30px rgba(234, 179, 8, 0.15);
+}
+
+.dark main .rounded-xl.border.border-gray-200:hover {
+  box-shadow: 0 8px 30px rgba(234, 179, 8, 0.12);
+}
+
+main .rounded-xl.border.border-yellow-200:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 8px 30px rgba(234, 179, 8, 0.12);
+}
+
+main .rounded-xl.border.border-gray-200 :is(h3),
+main .rounded-xl.border.border-yellow-200 :is(h3) {
+  transition: color 0.3s ease;
+}
+
+main .rounded-xl.border.border-gray-200:hover :is(h3) {
+  color: rgb(202 138 4); /* yellow-600 */
+}
+
+.dark main .rounded-xl.border.border-gray-200:hover :is(h3) {
+  color: rgb(250 204 21); /* yellow-400 */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hover-card,
+  .hover-card:hover,
+  main .rounded-xl.border.border-gray-200,
+  main .rounded-xl.border.border-gray-200:hover,
+  main .rounded-xl.border.border-yellow-200,
+  main .rounded-xl.border.border-yellow-200:hover {
+    transition: none;
+    transform: none;
+  }
 }
 
 @keyframes fadeInUp {
