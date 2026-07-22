@@ -336,6 +336,11 @@
   const savedLang = localStorage.getItem('language');
   let current = savedLang === 'en' || savedLang === 'de' ? savedLang : 'de';
 
+  function setI18nText(el, text) {
+    const target = el.querySelector(':scope > [data-i18n-text]') || el;
+    target.textContent = text;
+  }
+
   function applyLanguage(lang) {
     if (lang !== 'en' && lang !== 'de') lang = 'de';
     current = lang;
@@ -344,8 +349,14 @@
 
     document.querySelectorAll('[data-i18n]').forEach((el) => {
       const key = el.getAttribute('data-i18n');
+      if (!key) return;
       const text = translations[lang]?.[key];
-      if (text) el.textContent = text;
+      if (!text) return;
+      try {
+        setI18nText(el, text);
+      } catch (_) {
+        /* keep default copy if one node fails */
+      }
     });
 
     document.querySelectorAll('[data-i18n-aria]').forEach((el) => {
@@ -374,6 +385,10 @@
   });
 
   window.t = (key) => translations[current]?.[key] || translations.de[key] || '';
+  window.applyLanguage = applyLanguage;
 
   applyLanguage(current);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => applyLanguage(current));
+  }
 })();
